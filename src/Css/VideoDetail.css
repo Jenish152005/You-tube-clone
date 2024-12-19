@@ -1,0 +1,43 @@
+/* src/Css/VideoDetail.css */
+.video-detail-container {
+    padding: 20px;
+    text-align: center;
+    height: 90vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    max-width: 750px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the video on the page */
+}
+
+video {
+    width: 100%; /* Make the video take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .video-detail-container {
+        padding: 10px; /* Reduce padding on smaller screens */
+        height: 80vh; /* Adjust height for smaller screens */
+        margin-top: 25px;
+    }
+
+    .video-wrapper {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-detail-container {
+        height: 70vh; /* Further adjust height for very small screens */
+    }
+
+    video {
+        border-radius: 4px; /* Smaller border radius for very small screens */
+    }
+}
